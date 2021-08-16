@@ -1,0 +1,107 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+nav {
+   background-color: #fd7e14;
+}
+nav  .container-fluid .navbar-brand{
+    color: white;
+}
+nav .container-fluid .navbar-collapse .navbar-nav .nav-link{
+    color: white;
+}
+
+
+.hero{
+    max-width: 85.5%;
+}
+
+.container .img-content{
+    width: 300px;
+
+}
+#price{
+    color: white;
+}
+#price h1{
+    color: black;
+}
+.card{
+    border-style: none;
+    ;
+}
+ .card-style{
+    box-shadow: 5px px black;
+    max-width: 500px;
+    border-color: orange;
+    border-width: 4px;
+    background: rgb(247, 176, 84) ; 
+    /* background-color: orangered; */
+    border-radius: 20px;
+}
+.card-style h1{
+    background-color: orange;
+    border-radius: 10px ;
+    max-width: 100%;
+    color: white;
+}
+
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:gray;
+    transition: .5s;
+
+}
+ .slider:before{
+    position: absolute;
+    content: "";
+    height:26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .5s;
+}
+input:checked + .slider{
+    background-color: orange
+}
+input:focus + .slider{
+    box-shadow: 0 0 1px orange;
+}
+input:checked+ .slider::before{
+    transform: translateX(26px);
+}
+.myswitch{
+    text-align: center;
+}
+.container .contact-us{
+    background-color: orange;
+    color: white;
+}
+.container .contact-us .contact-text{
+    padding-left: 5px;
+}
+#contact{
+    width: 100%;
+}

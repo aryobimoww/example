@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-tranparancy d-flex">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#">Coding Course</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" data-scroll href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-scroll href="#price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-scroll href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="text-center">
+        <img class="hero" data-aos="zoom-out" src="img/hero.png" alt="hero">
+    </div>
+
+    <div class="container " id="about">
+        <h1 class="text-center" data-aos="fade-up">About</h1>
+        <div class="row align-items-start pt-3 justify-content-center">
+            <div class="col-4" data-aos="fade-right" data-aos-delay="100">
+                <img class="img-content" src="img/content.png" alt="">
+            </div>
+            <div class="col-4" data-aos="fade-right" data-aos-delay="200">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis obcaecati doloremque ducimus vitae
+                facere necessitatibus itaque quis rerum totam assumenda sapiente dignissimos earum excepturi officiis,
+                officia ipsam maiores esse. Similique.
+            </div>
+        </div>
+    </div>
+    <!-- Price text  -->
+    <div class="container" id="price">
+        <h1 class="text-center" data-aos="fade-up">Price</h1>
+        <div class="container">
+            <div class="myswitch">
+                <label class="switch">
+                    <input class="myCheck" type="checkbox" onClick="change()" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="card">
+            <!-- <div class="row align-items-start pt-3 justify-content-around">
+                <div class="col-m card-style mb-3" data-aos="fade-down" data-aos-delay="100">
+                    <h1 class="text-center">JavaScript</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+                        nisi, cupiditate alias illo
+                        assumenda optio odit minus natus tempora repellendus nobis, ipsa magnam eum expedita consequatur
+                        ea
+                        perferendis veniam beatae! Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                        the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                        cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes
+                        from
+                    </p>
+                    <h4>40$</h4>
+                </div>
+                <div class="col-m card-style" data-aos="fade-down" data-aos-delay="200">
+                    <h1 class="text-center">Php</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt asperiores voluptates saepe
+                        pariatur
+                        quasi tempore, aliquam sint, voluptatem ea distinctio vitae, eos at veritatis modi accusantium.
+                        Ex
+                        corrupti minima nihil.Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                        the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                        cites of
+                    </p>
+                    <h4>50$</h4>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Rectangular switch -->
+    <div class="container pt-2" id="contact">
+        <div class="contact-us">
+            <h1 class="text-center">Contact us</h1>
+            <div class="contact-text">
+                <h3>Rena: 0123456689</h3>
+                <h3>Email: Rena@gmail.com</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    </script>
+    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedsDuration: true
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+//                 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+//                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+//                     integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+//                     crossorigin="anonymous"></script>
+//             <script>
